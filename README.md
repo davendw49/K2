@@ -1,5 +1,5 @@
 <div style="text-align:center">
-<img src="https://big-cheng.com/k2/k2.png" alt="k2-logo" width="200"/>
+<img src="https://www.cdeng.net/k2/k2.png" alt="k2-logo" width="200"/>
 <h2>🏔️ K2 (GeoLLaMA) Large Language Model for Geoscience</h2>
 </div>
 
@@ -24,7 +24,7 @@ In this repository, we will share the following code and data.
 - We release the code of further pretrain and instruction tuning of K2.
 
 ***The following is the overview of training K2:***
-![overview](https://big-cheng.com/k2/overview.png)
+![overview](https://www.cdeng.net/k2/overview.png)
 
 ## Quick Start
 
@@ -116,7 +116,7 @@ Scientific domain adaptation has two main steps during instruction tuning.
 - Instruction tuning with restructured domain knowledge, which we call expertise instruction tuning. For K2, we use knowledge-intensive instruction data, GeoSignal.
 
 ***The following is the illustration of the training domain-specific language model recipe:***
-![recipe](https://big-cheng.com/k2/recipe.png)
+![recipe](https://www.cdeng.net/k2/recipe.png)
 
 - **Adapter Model on [Hugging Face](https://huggingface.co/): [daven3/k2_it_adapter](https://huggingface.co/daven3/k2_it_adapter)**
 - **Dataset on [Hugging Face](https://huggingface.co/): [geosignal](https://huggingface.co/datasets/daven3/geosignal)**
@@ -138,7 +138,7 @@ The training script is **`run_clm.py`**
 deepspeed --num_gpus=4 run_clm.py --deepspeed ds_config_zero.json >log 2>&1 &
 ```
 
-![loss curve](https://big-cheng.com/k2/loss_curve.png)
+![loss curve](https://www.cdeng.net/k2/loss_curve.png)
 
 The parameters we use: 
 ```
@@ -184,7 +184,7 @@ python finetune.py --base_model /path/to/checkpoint-30140 --data_path /path/to/g
 ## Cases
 |Case 1|Case 2|Case 3|
 |-|-|-|
-|![](https://big-cheng.com/k2/case2.png)|![](https://big-cheng.com/k2/case1.png)|![](https://big-cheng.com/k2/case3.png)|
+|![](https://www.cdeng.net/k2/case2.png)|![](https://www.cdeng.net/k2/case1.png)|![](https://www.cdeng.net/k2/case3.png)|
 
 - **Answer:**
     - **Question:** What is an IOCG?
@@ -206,7 +206,7 @@ K2 is originally from the name of the second-highest mountain in the world, and 
 
 ## Contributors
 
-This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://big-cheng.com/), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](mailto:q224chen@uwaterloo.ca), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](https://github.com/lzhou1998), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, [Junxian He](https://jxhe.github.io/), and Xinbing Wang. The whole project is supported by **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences.
+This project was founded by Acemap at Shanghai Jiao Tong University, including [Cheng Deng](https://www.cdeng.net/), [Tianhang Zhang](https://github.com/zthang), [Zhongmou He](https://github.com/twelfth-star), [Qiyuan Chen](mailto:q224chen@uwaterloo.ca), [Yuanyuan Shi](https://github.com/syy-yoyo), [Le Zhou](https://github.com/lzhou1998), supervised by Weinan Zhang, Luoyi Fu, Zhouhan Lin, [Junxian He](https://jxhe.github.io/), and Xinbing Wang. The whole project is supported by **Chenghu Zhou** and the Institute of Geographical Science, Natural Resources Research, Chinese Academy of Sciences.
 
 
 ## Acknowledgements
